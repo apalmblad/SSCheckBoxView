@@ -1,4 +1,3 @@
-
 /*
  Copyright 2011 Ahmet Ardal
  
@@ -131,7 +130,9 @@ static const CGFloat kHeight = 36.0f;
     }
 
     self.alpha = 0.8f;
-    [super touchesBegan:touches withEvent:event];
+    if( !exclusiveTouch ) {
+        [super touchesBegan:touches withEvent:event];
+    }
 }
 
 - (void) touchesCancelled:(NSSet *)touches
@@ -142,7 +143,9 @@ static const CGFloat kHeight = 36.0f;
     }
 
     self.alpha = 1.0f;
-    [super touchesCancelled:touches withEvent:event];
+    if( !exclusiveTouch ) {
+        [super touchesCancelled:touches withEvent:event];
+    }
 }
 
 - (void) touchesEnded:(NSSet *)touches
@@ -174,8 +177,9 @@ static const CGFloat kHeight = 36.0f;
             }
         }
     }
-
-    [super touchesEnded:touches withEvent:event];
+    if( !exclusiveTouch ) {
+        [super touchesEnded:touches withEvent:event];
+    }
 }
 
 - (BOOL) canBecomeFirstResponder
