@@ -130,7 +130,7 @@ static const CGFloat kHeight = 36.0f;
     }
 
     self.alpha = 0.8f;
-    if( !exclusiveTouch ) {
+    if( !self.exclusiveTouch ) {
         [super touchesBegan:touches withEvent:event];
     }
 }
@@ -143,7 +143,7 @@ static const CGFloat kHeight = 36.0f;
     }
 
     self.alpha = 1.0f;
-    if( !exclusiveTouch ) {
+    if( !self.exclusiveTouch ) {
         [super touchesCancelled:touches withEvent:event];
     }
 }
@@ -177,7 +177,7 @@ static const CGFloat kHeight = 36.0f;
             }
         }
     }
-    if( !exclusiveTouch ) {
+    if( !self.exclusiveTouch ) {
         [super touchesEnded:touches withEvent:event];
     }
 }
