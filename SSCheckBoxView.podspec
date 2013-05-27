@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author   = { 'Ahmet Ardal' => 'ardalahmet@gmail.com' }
   s.platform = :ios
 
-  s.source   = { :git => 'https://github.com/apalmblad/SSCheckBoxView.git', :tag => '2b5140220712efae4d4f1a89122b035e5555848d' }
+  #s.source   = { :git => 'https://github.com/apalmblad/SSCheckBoxView.git', :tag => '2b5140220712efae4d4f1a89122b035e5555848d' }
 
   s.source_files = 'SSCheckBoxView/SSCheckBoxView', 'SSCheckBoxView/SSCheckBoxView/Helpers'
   s.resources = "SSCheckBoxView/SSCheckBoxView/Graphics/*.png"
