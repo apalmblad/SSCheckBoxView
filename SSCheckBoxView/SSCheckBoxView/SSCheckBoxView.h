@@ -1,4 +1,3 @@
-
 /*
  Copyright 2011 Ahmet Ardal
  
@@ -56,6 +55,7 @@ typedef enum SSCheckBoxViewStyle_ {
 @property (nonatomic, readonly) SSCheckBoxViewStyle style;
 @property (nonatomic, readonly) BOOL checked;
 @property (nonatomic, getter=enabled, setter=setEnabled:) BOOL enabled;
+@property (nonatomic,readonly)  UILabel *textLabel;
 @property (nonatomic, copy) void (^stateChangedBlock)(SSCheckBoxView *cbv);
 
 - (id) initWithFrame:(CGRect)frame
