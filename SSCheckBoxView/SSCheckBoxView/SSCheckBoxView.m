@@ -102,7 +102,7 @@ static const CGFloat kHeight = 36.0f;
 
 - (void) setText:(NSString *)text
 {
-    [self.extLabel setText:text];
+    [self.textLabel setText:text];
 }
 
 - (void) setChecked:(BOOL)isChecked
